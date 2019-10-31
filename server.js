@@ -8,7 +8,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 app.use(express.static(path.join(__dirname, '/client/dist')));
 
 app.get('/', (req, res) => {
-  res.json({ msg: 'Listening on port ' + port });
+  res.send('working');
 });
 
 app.get('*', (req, res) => {
