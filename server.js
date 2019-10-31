@@ -6,6 +6,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.get('/', (req, res) => {
   console.log('working');
+  res.end();
 });
 
 // "heroku-postbuild": "cd client && yarn && yarn --only=dev --no-shrinkwrap && yarn build"
