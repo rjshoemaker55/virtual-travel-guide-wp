@@ -19,7 +19,8 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "heroku-prebuild": "yarn add --dev"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
