@@ -13,7 +13,6 @@
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently \"yarn server\" \"yarn client\"",
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn && yarn --only=dev --no-shrinkwrap && yarn build"
+    "start": "node server.js"
   }
 }
