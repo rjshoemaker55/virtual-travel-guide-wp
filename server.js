@@ -7,6 +7,10 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 app.use(expres.static(path.join(__dirname, '/client/dist')));
 
+app.get('/', (req, res) => {
+  res.json({ msg: 'Listening on port ' + port });
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(path.join(__dirname + '/client/dist/index.html')));
 });
