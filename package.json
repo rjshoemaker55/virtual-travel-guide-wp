@@ -16,9 +16,10 @@
     "webpack-cli": "^3.3.9"
   },
   "scripts": {
+    "start": "webpack --mode production",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
-    "heroku-prebuild": "npm install --dev"
+    "dev": "webpack-dev-server --mode development",
+    "heroku-postbuild": "webpack -p"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
