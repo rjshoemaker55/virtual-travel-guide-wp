@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-app.use(expres.static(path.join(__dirname, '/client/dist')));
+app.use(express.static(path.join(__dirname, '/client/dist')));
 
 app.get('/', (req, res) => {
   res.json({ msg: 'Listening on port ' + port });
